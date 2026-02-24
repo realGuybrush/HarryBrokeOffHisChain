@@ -6,9 +6,6 @@ public class Health : MonoBehaviour
 {
     [SerializeField]
     private AnimatorController animator;
-
-    [SerializeField]
-    private StatsController stats;
     
     [SerializeField]
     private float maxHealth = 10;

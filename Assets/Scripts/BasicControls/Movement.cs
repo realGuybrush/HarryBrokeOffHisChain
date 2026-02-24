@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     protected Rigidbody2D thisObject;
 
     [SerializeField]
-    protected StatsController stats;
+    private float defaultSpeed;
     
     [SerializeField]
     private float slowDownTime = 0.1f;
@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
         {
             speedUpTimer = speedUpTime;
         }
-        float walkSpeed = stats.Speed(running) * accelerationCoeff;
+        float walkSpeed = defaultSpeed * accelerationCoeff;
         thisObject.linearVelocity = new Vector2(walkSpeed * direction.x, thisObject.linearVelocity.y);
         slowDownTimer = slowDownTime;
     }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Jumping : MonoBehaviour
 {
@@ -9,36 +10,29 @@ public class Jumping : MonoBehaviour
     private Rigidbody2D body;
 
     [SerializeField]
-    private LandTrigger land;
+    private LandTrigger head, land;
     
     [SerializeField]
-    private float jumpSpeed = 4;
+    private float jumpSpeed = 5f;
 
     [SerializeField]
-    private float jumpTicks = 3;
+    private float jumpTime =  0.2f;
 
-    private float jumpTimer;
+    private int unendedJumpCoroutines;
+    private int endedJumpCoroutines;
+
+    private float defaultGravityScale;
 
     private void Awake()
     {
+        head.OnLand += EndJumping;
         land.OnLand += Land;
-    }
-
-    private void Update()
-    {
-        JumpTimer();
-    }
-
-    private void JumpTimer()
-    {
-        if (jumpTimer > 0)
-        {
-            jumpTimer--;
-        }
+        defaultGravityScale = body.gravityScale;
     }
 
     private void OnDestroy()
     {
+        head.OnLand -= EndJumping;
         land.OnLand -= Land;
     }
 
@@ -46,32 +40,48 @@ public class Jumping : MonoBehaviour
     {
         if (!land.IsAirborne)
         {
-            jumpTimer = jumpTicks;
-            if (animator == null) return;
-            animator.SetBoolTemporarily("Jump", true);
+            StartCoroutine("WaitToMaximizeJump");
+            body.linearVelocityY = jumpSpeed;
+            body.gravityScale = 0f;
+            InitJumpAnimations();
         }
     }
-    
-    public void JumpIfPossible()
+
+    private void InitJumpAnimations()
     {
-        if (jumpTimer <= 0) return;
-        body.linearVelocityY = jumpSpeed;
         if (animator == null) return;
+        animator.SetBoolTemporarily("Jump", true);
         animator.SetBool("Airborne", true);
     }
 
-
-
     public void EndJumping()
     {
-        jumpTimer = 0;
+        body.gravityScale = defaultGravityScale;
     }
 
     private void Land()
     {
         EndJumping();
+        InitLandAnimation();
+    }
+
+    private void InitLandAnimation()
+    {
         if (animator == null) return;
         animator.SetBool("Airborne", false);
+    }
+
+    private IEnumerator WaitToMaximizeJump()
+    {
+        unendedJumpCoroutines++;
+        yield return new WaitForSeconds(jumpTime);
+        endedJumpCoroutines++;
+        if (endedJumpCoroutines == unendedJumpCoroutines)
+        {
+            unendedJumpCoroutines = 0;
+            endedJumpCoroutines = 0;
+            EndJumping();
+        }
     }
 
     public bool IsJumping => land.IsAirborne;

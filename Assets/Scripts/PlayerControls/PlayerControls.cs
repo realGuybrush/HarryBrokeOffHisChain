@@ -59,6 +59,7 @@ public class PlayerControls : BasicMovement
     private void DisableInputActions()
     {
         move?.Disable();
+        jump?.Disable();
         normalAttack?.Disable();
     }
 
@@ -72,7 +73,6 @@ public class PlayerControls : BasicMovement
         if (jump.IsPressed())
         {
             HandleJumpStartCommand();
-            HandleJumpCommand();
         }
     }
     

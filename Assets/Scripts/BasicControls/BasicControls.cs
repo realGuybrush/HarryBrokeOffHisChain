@@ -72,9 +72,9 @@ public class BasicMovement : MonoBehaviour
         jumping.StartJumping();
     }
     
-    public void HandleJumpCommand()
+    public void HandleJumpEndCommand()
     {
-        jumping.JumpIfPossible();
+        jumping.EndJumping();
     }
     
     public void HandleJumpEndCommand(InputAction.CallbackContext context)
@@ -88,7 +88,7 @@ public class BasicMovement : MonoBehaviour
     {
         if (weapon == null)
         {
-            Debug.Log("GameObject with damaging collider (representation of fist, weapon, etc.) is missing.");
+            //Debug.Log("GameObject with damaging collider (representation of fist, weapon, etc.) is missing.");
             return;
         }
         attacking = attack;
