@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Jumping : MonoBehaviour
+public class Jumping3 : MonoBehaviour
 {
     [SerializeField]
     private AnimatorController animator;
@@ -19,8 +19,7 @@ public class Jumping : MonoBehaviour
     [SerializeField]
     private float jumpHeight =  2f;
 
-    [SerializeField]
-    private JumpStopper jumpStopper;
+    private float jumpStartY, jumpEndY;
 
     private float defaultGravityScale;
     private bool printed; 
@@ -30,6 +29,13 @@ public class Jumping : MonoBehaviour
         head.OnLand += EndJumping;
         land.OnLand += Land;
         defaultGravityScale = body.gravityScale;
+    }
+
+    private void FixedUpdate()
+    {
+        if (land.IsAirborne)
+            if(transform.position.y >= jumpEndY)
+                EndJumping();
     }
 
     private void OnDestroy()
@@ -43,7 +49,8 @@ public class Jumping : MonoBehaviour
         if (!land.IsAirborne)
         {
             printed = false;
-            jumpStopper.SetOffset(jumpHeight);
+            jumpStartY = transform.position.y;
+            jumpEndY = jumpStartY + jumpHeight;
             body.linearVelocityY = jumpSpeed;
             body.gravityScale = 0f;
             InitJumpAnimations();
@@ -62,7 +69,7 @@ public class Jumping : MonoBehaviour
         body.gravityScale = defaultGravityScale;
         if (!printed && body.linearVelocityY < 0)
         {
-            //WorldManager.Instance.SetHeight(4, transform.position.y);
+            WorldManager.Instance.SetHeight(3, transform.position.y);
             //Debug.Log("3. MaxHeight: "+ transform.position.y);
             printed = true;
         }

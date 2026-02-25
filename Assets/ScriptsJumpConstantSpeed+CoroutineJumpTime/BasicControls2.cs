@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [Serializable]
-public class BasicMovement : MonoBehaviour
+public class BasicMovement2 : MonoBehaviour
 {
     [SerializeField]
     protected AnimatorController animator;
@@ -19,7 +19,7 @@ public class BasicMovement : MonoBehaviour
     protected Movement movement;
 
     [SerializeField]
-    protected Jumping jumping;
+    protected Jumping2 jumping;
 
     [SerializeField]
     private Weapon weapon;

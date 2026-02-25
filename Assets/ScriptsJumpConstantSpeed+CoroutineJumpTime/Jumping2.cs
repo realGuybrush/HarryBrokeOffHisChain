@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-public class Jumping : MonoBehaviour
+public class Jumping2 : MonoBehaviour
 {
     [SerializeField]
     private AnimatorController animator;
@@ -17,13 +16,12 @@ public class Jumping : MonoBehaviour
     private float jumpSpeed = 5f;
 
     [SerializeField]
-    private float jumpHeight =  2f;
+    private float jumpTime =  0.2f;
 
-    [SerializeField]
-    private JumpStopper jumpStopper;
+    private int unendedJumpCoroutines;
+    private int endedJumpCoroutines;
 
     private float defaultGravityScale;
-    private bool printed; 
 
     private void Awake()
     {
@@ -42,8 +40,7 @@ public class Jumping : MonoBehaviour
     {
         if (!land.IsAirborne)
         {
-            printed = false;
-            jumpStopper.SetOffset(jumpHeight);
+            StartCoroutine("WaitToMaximizeJump");
             body.linearVelocityY = jumpSpeed;
             body.gravityScale = 0f;
             InitJumpAnimations();
@@ -60,12 +57,6 @@ public class Jumping : MonoBehaviour
     public void EndJumping()
     {
         body.gravityScale = defaultGravityScale;
-        if (!printed && body.linearVelocityY < 0)
-        {
-            //WorldManager.Instance.SetHeight(4, transform.position.y);
-            //Debug.Log("3. MaxHeight: "+ transform.position.y);
-            printed = true;
-        }
     }
 
     private void Land()
@@ -78,6 +69,21 @@ public class Jumping : MonoBehaviour
     {
         if (animator == null) return;
         animator.SetBool("Airborne", false);
+    }
+
+    private IEnumerator WaitToMaximizeJump()
+    {
+        unendedJumpCoroutines++;
+        yield return new WaitForSeconds(jumpTime);
+        endedJumpCoroutines++;
+        if (endedJumpCoroutines == unendedJumpCoroutines)
+        {
+            unendedJumpCoroutines = 0;
+            endedJumpCoroutines = 0;
+            WorldManager.Instance.SetHeight(2, transform.position.y);
+            //Debug.Log("2. Coroutine: "+transform.position.y);
+            EndJumping();
+        }
     }
 
     public bool IsJumping => land.IsAirborne;
