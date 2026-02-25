@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Jumping : MonoBehaviour
 {
@@ -17,13 +15,12 @@ public class Jumping : MonoBehaviour
     private float jumpSpeed = 5f;
 
     [SerializeField]
-    private float jumpHeight =  2f;
+    private float jumpHeight =  1.5f;
 
     [SerializeField]
     private JumpStopper jumpStopper;
 
     private float defaultGravityScale;
-    private bool printed; 
 
     private void Awake()
     {
@@ -42,7 +39,6 @@ public class Jumping : MonoBehaviour
     {
         if (!land.IsAirborne)
         {
-            printed = false;
             jumpStopper.SetOffset(jumpHeight);
             body.linearVelocityY = jumpSpeed;
             body.gravityScale = 0f;
@@ -60,12 +56,6 @@ public class Jumping : MonoBehaviour
     public void EndJumping()
     {
         body.gravityScale = defaultGravityScale;
-        if (!printed && body.linearVelocityY < 0)
-        {
-            //WorldManager.Instance.SetHeight(4, transform.position.y);
-            //Debug.Log("3. MaxHeight: "+ transform.position.y);
-            printed = true;
-        }
     }
 
     private void Land()

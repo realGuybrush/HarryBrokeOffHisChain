@@ -2,47 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/JumpStopper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/JumpStopper.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/NoFriction.physicsMaterial2D" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/NoFriction.physicsMaterial2D" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/Harry.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/Harry.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Jumping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Jumping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/WorldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/WorldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +93,7 @@
       <updated>1771864109147</updated>
       <workItem from="1771864125022" duration="4666000" />
       <workItem from="1771922411464" duration="7559000" />
-      <workItem from="1772029711173" duration="1130000" />
+      <workItem from="1772029711173" duration="1618000" />
     </task>
     <servers />
   </component>
