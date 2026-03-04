@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Jumping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Jumping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/BasicControls1.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/Jumping1.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsBaseJump+AddSpeedTicks/PlayerControls1.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/BasicControls2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/Jumping2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpConstantSpeed+CoroutineJumpTime/PlayerControls2.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/BasicControls3.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/Jumping3.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptsJumpSetHeight/PlayerControls3.cs.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobController.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobController/LeftRightWalkerControls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobController/LeftRightWalkerControls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobController/MobBasicControls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobController/MobBasicControls.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalFuncs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalFuncs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/PlayerControls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/1d/c837751a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/FlashProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -54,6 +43,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34937888" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29968944" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -93,7 +84,10 @@
       <updated>1771864109147</updated>
       <workItem from="1771864125022" duration="4666000" />
       <workItem from="1771922411464" duration="7559000" />
-      <workItem from="1772029711173" duration="1618000" />
+      <workItem from="1772029711173" duration="2264000" />
+      <workItem from="1772532810176" duration="1419000" />
+      <workItem from="1772543741256" duration="3894000" />
+      <workItem from="1772618946876" duration="436000" />
     </task>
     <servers />
   </component>

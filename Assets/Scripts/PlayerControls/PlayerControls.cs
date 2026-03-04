@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerControls : BasicMovement
+public class PlayerControls : BasicControls
 {
     [SerializeField]
     private PlayerInput playerInputActions;

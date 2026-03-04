@@ -49,6 +49,13 @@ public static class GlobalFuncs
                           //(pos1.z - pos2.z) * (pos1.z - pos2.z)
     }
 
+    public static Vector3 TurnIntoDirectionVector(Vector3 input)
+    {
+        return new Vector3(input.x > 0? 1 : input.x < 0? -1 : 0,
+            input.y > 0? 1 : input.y < 0? -1 : 0,
+            input.z > 0? 1 : input.z < 0? -1 : 0);
+    }
+
     ///////COLOR STUFF///////
     public static void SetTransparency(GameObject obj, float transp)
     {

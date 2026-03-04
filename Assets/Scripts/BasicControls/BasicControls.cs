@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [Serializable]
-public class BasicMovement : MonoBehaviour
+public class BasicControls : MonoBehaviour
 {
     [SerializeField]
     protected AnimatorController animator;
