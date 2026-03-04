@@ -61,5 +61,7 @@ public class Movement : MonoBehaviour
                 accelerationCoeff = 0.1f;
             }
         }
+        if (!GlobalFuncs.AroundZero(thisObject.linearVelocityX) && slowDownTimer <= 0)
+            slowDownTimer = slowDownTime;
     }
 }

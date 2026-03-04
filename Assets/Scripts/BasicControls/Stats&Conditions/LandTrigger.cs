@@ -17,5 +17,16 @@ public class LandTrigger : MonoBehaviour
         airborne = true;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        airborne = false;
+        OnLand?.Invoke();
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        airborne = true;
+    }
+
     public bool IsAirborne => airborne;
 }
