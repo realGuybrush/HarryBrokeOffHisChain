@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.kra" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.kra" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Trap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Trap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Harry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/LandHarry.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/LandHarry.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platform.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/HarryGame_Environment_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/HarryGame_Environment_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="04d756dabd306a6d279449644b1c940a44bac687" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +45,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/1d/c837751a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/FlashProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/7d/ecdca555/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="3A4uCAGzodouiHTGSor5RuXzRBO" />
   <component name="ProjectLevelVcsManager">
@@ -66,10 +79,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5808">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11908">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="5808" />
+      <option name="pid" value="11908" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />

@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
     protected float lifeTime = 400;
 
     [SerializeField]
-    protected float damage = 5;
+    protected int damage = 5;
 
     [SerializeField]
     protected float speed = 5f;
@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
         StartCoroutine("WaitToDisable");
     }
 
-    public void Init(GameObject newIgnore, Vector3 movingDirection, float newDamage, Vector3 newPosition)
+    public void Init(GameObject newIgnore, Vector3 movingDirection, int newDamage, Vector3 newPosition)
     {
         ignore = newIgnore;
         SetVelocity(movingDirection);
@@ -49,7 +49,7 @@ public class Projectile : MonoBehaviour
             if (collision.gameObject == ignore) return;
             target = collision.gameObject.GetComponent<Health>();
             if (target != null)
-                damage -= target.GetDamage(damage);
+                damage -= target.GetDamage(damage, transform.position - target.transform.position);
             if (damage <= 0)
                 gameObject.SetActive(false);
         }

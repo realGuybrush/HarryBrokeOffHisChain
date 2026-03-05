@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class Trap : MonoBehaviour
 {
     [SerializeField]
     private int damage;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         other.gameObject.GetComponent<Health>()?.GetDamage(damage, transform.position - other.transform.position);
     }
-
-    public int Damage { get => damage; set => damage = value; }
 }

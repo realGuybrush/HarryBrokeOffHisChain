@@ -6,23 +6,31 @@ public class Health : MonoBehaviour
 {
     [SerializeField]
     private AnimatorController animator;
+
+    [SerializeField]
+    private Rigidbody2D thisBody;
     
     [SerializeField]
-    private float maxHealth = 10;
+    private int maxHealth = 10;
 
     [SerializeField]
-    private float health = 10;
+    private int health = 10;
 
-    public float GetDamage(float Damage) {
-        float totalDamageReceived = Damage;
+    public event Action<Vector3> OnDamaged = delegate { };
+    public event Action OnDie = delegate { };
+
+    public int GetDamage(int Damage, Vector3 direction) {
+        int totalDamageReceived = Damage;
         if (totalDamageReceived > health)
             totalDamageReceived = health;
         health -= totalDamageReceived;
         if (health <= 0)
-            animator.SetBool("Dead", true);
-        else 
-            animator.SetBoolTemporarily("Damaged", true);
-        Debug.Log(totalDamageReceived);
+        {
+            OnDie?.Invoke();
+        } else
+        {
+            OnDamaged?.Invoke(-direction);
+        }
         return totalDamageReceived;
     }
 

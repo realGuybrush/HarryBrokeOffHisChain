@@ -8,6 +8,9 @@ public class BasicControls : MonoBehaviour
 {
     [SerializeField]
     protected AnimatorController animator;
+    
+    [SerializeField]
+    protected Rigidbody2D thisBody;
 
     [SerializeField]
     protected Transform visualPart;
@@ -27,6 +30,8 @@ public class BasicControls : MonoBehaviour
     private bool attacking;
 
     private Vector3 flipAngle = new Vector3(0f, 180f, 0f);
+
+    private float defaultKickForce = 10f;
     
     private void Awake()
     {
@@ -38,13 +43,31 @@ public class BasicControls : MonoBehaviour
         Updating();
     }
 
+    private void OnDestroy()
+    {
+        OnDestroying();
+    }
+
     protected virtual void Awaking()
     {
-        
+        if (health != null)
+        {
+            health.OnDie += Die;
+            health.OnDamaged += ReceiveDamage;
+        }
     }
 
     protected virtual void Updating()
     {
+    }
+
+    protected virtual void OnDestroying()
+    {
+        if (health != null)
+        {
+            health.OnDie -= Die;
+            health.OnDamaged -= ReceiveDamage;
+        }
     }
 
     ///////MOVE///////
@@ -95,7 +118,23 @@ public class BasicControls : MonoBehaviour
 
     ///////HEALTH///////
 
+    protected virtual void Die()
+    {
+        animator.SetBool("Dead", true);
+        //drop corpse from predefined list of corpses
+        gameObject.SetActive(false);
+        enabled = false;
+    }
+
+    protected virtual void ReceiveDamage(Vector3 direction)
+    {
+        animator.SetBoolTemporarily("Damaged", true);
+        thisBody.linearVelocity += new Vector2(direction.x, 1) * defaultKickForce;
+    }
+
     public bool IsAlive => health.HP > 0;
+    
+    
 
     ///////SAVE&LOAD///////
 /*
