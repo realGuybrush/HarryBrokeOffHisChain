@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Trap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Trap.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker.kra" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Harry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Platform.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tiles/HarryGame_Environment_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tiles/HarryGame_Environment_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +67,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11908">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11908" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -106,15 +94,26 @@
       <workItem from="1772618946876" duration="3424000" />
       <workItem from="1772637466858" duration="5661000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Left-RightWalker Sprite">
+      <created>1772711905843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772711905843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added Left-RightWalker Sprite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Left-RightWalker Sprite" />
   </component>
 </project>
