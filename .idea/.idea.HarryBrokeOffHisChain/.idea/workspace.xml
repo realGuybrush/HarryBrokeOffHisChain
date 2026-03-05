@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Friction.physicsMaterial2D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Friction.physicsMaterial2D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/Platform.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Stats&amp;Conditions/LandTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Stats&amp;Conditions/LandTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/CameraMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/CameraMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
