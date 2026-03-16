@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -7,29 +8,39 @@ public class Projectile : MonoBehaviour
     private Health target;
 
     [SerializeField]
-    protected float lifeTime = 400;
+    protected float lifeTime = 20f;
 
     [SerializeField]
-    protected int damage = 5;
+    protected int damage = 1;
 
     [SerializeField]
-    protected float speed = 5f;
+    protected float speed = 10f;
 
     [SerializeField]
     protected Rigidbody2D thisBody;
 
+    protected float lifetimeTimer;
+
     void OnEnable()
     {
         thisBody.linearVelocity = transform.right * speed;
-        StartCoroutine("WaitToDisable");
+        lifetimeTimer = lifeTime;
     }
 
-    public void Init(GameObject newIgnore, Vector3 movingDirection, int newDamage, Vector3 newPosition)
+    private void Update()
+    {
+        if (lifetimeTimer > 0)
+            lifetimeTimer -= Time.deltaTime;
+        else
+            gameObject.SetActive(false);
+    }
+
+    public void Init(GameObject newIgnore, Vector3 movingDirection, Vector3 newPosition)
     {
         ignore = newIgnore;
         SetVelocity(movingDirection);
-        damage = newDamage;
         transform.position = newPosition;
+        gameObject.SetActive(true);
     }
 
     protected virtual void SetVelocity(Vector3 movingDirection)
@@ -44,15 +55,11 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (damage > 0)
-        {
-            if (collision.gameObject == ignore) return;
-            target = collision.gameObject.GetComponent<Health>();
-            if (target != null)
-                damage -= target.GetDamage(damage, transform.position - target.transform.position);
-            if (damage <= 0)
-                gameObject.SetActive(false);
-        }
+        if (collision.gameObject == ignore) return;
+        target = collision.gameObject.GetComponent<Health>();
+        if (target != null)
+            target.GetDamage(damage, transform.position - target.transform.position);
+        gameObject.SetActive(false);
     }
 
     public float LifeTime => lifeTime;

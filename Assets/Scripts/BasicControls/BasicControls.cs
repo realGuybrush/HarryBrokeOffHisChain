@@ -31,7 +31,7 @@ public class BasicControls : MonoBehaviour
 
     private Vector3 flipAngle = new Vector3(0f, 180f, 0f);
 
-    private float defaultKickForce = 10f;
+    private float defaultKickForce = 3f;
     
     private void Awake()
     {
