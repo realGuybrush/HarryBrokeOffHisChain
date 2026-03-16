@@ -17,7 +17,7 @@ public class LeftRightWalkerControls : BasicControls
 
     protected override void Updating()
     {
-        movement.Move(direction);
+        HandleMoveCommand(direction);
         if (transform.position.x - startPosition.x > distance && !goingLeft ||
             transform.position.x - startPosition.x < -distance && goingLeft)
         {
