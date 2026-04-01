@@ -6,6 +6,9 @@ public class PlayerControls : BasicControls
     [SerializeField]
     private PlayerInput playerInputActions;
 
+    [SerializeField]
+    private UICounter coinCounter;
+
     private InputAction move, jump, normalAttack;
 
     protected override void Updating()
@@ -85,5 +88,10 @@ public class PlayerControls : BasicControls
     private void EndNormalAttack(InputAction.CallbackContext context)
     {
         Attack(false);
+    }
+
+    public void PickUpCoin(int amount)
+    {
+        coinCounter?.AddCountable(amount);
     }
 }
