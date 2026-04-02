@@ -16,7 +16,6 @@ public class Health : MonoBehaviour
     [SerializeField]
     private int health = 10;
 
-    public event Action<int> OnHeal = delegate { };
     public event Action<Vector3, int> OnDamaged = delegate { };
     public event Action OnDie = delegate { };
 
@@ -33,11 +32,14 @@ public class Health : MonoBehaviour
         return totalDamageReceived;
     }
     
-    public void Heal(int amount) {
+    public bool Heal(int amount)
+    {
+        if (health >= maxHealth)
+            return false;
         health += amount;
         if (health > maxHealth)
             health = maxHealth;
-        OnHeal?.Invoke(amount);
+        return true;
     }
 
     public float MaxHP => maxHealth;

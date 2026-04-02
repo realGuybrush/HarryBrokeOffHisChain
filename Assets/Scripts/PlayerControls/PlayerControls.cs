@@ -53,7 +53,6 @@ public class PlayerControls : BasicControls
         normalAttack.started += StartNormalAttack;
         normalAttack.canceled += EndNormalAttack;
         jump.canceled += HandleJumpEndCommand;
-        health.OnHeal += Heal;
     }
 
     private void RemoveEvents()
@@ -61,7 +60,6 @@ public class PlayerControls : BasicControls
         normalAttack.started -= StartNormalAttack;
         normalAttack.canceled -= EndNormalAttack;
         jump.canceled -= HandleJumpEndCommand;
-        health.OnHeal -= Heal;
     }
 
     private void DisableInputActions()
@@ -100,9 +98,14 @@ public class PlayerControls : BasicControls
         coinCounter?.AddCountable(amount);
     }
 
-    private void Heal(int amount)
+    public bool Heal(int amount)
     {
-        healthUI.Heal(amount);
+        if (health.Heal(amount))
+        {
+            healthUI.Heal(amount);
+            return true;
+        }
+        return false;
     }
 
     protected override void ReceiveDamage(Vector3 direction, int amount)

@@ -26,7 +26,6 @@ public class HealthUI : MonoBehaviour
         while (amount > 0 && currentHeartIndex < hearts.Count)
         {
             hearts[currentHeartIndex].Heal();
-            currentHeartIndex++;
             amount--;
         }
     }
