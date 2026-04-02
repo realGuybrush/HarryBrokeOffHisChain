@@ -9,6 +9,9 @@ public class PlayerControls : BasicControls
     [SerializeField]
     private UICounter coinCounter;
 
+    [SerializeField]
+    private HealthUI healthUI;
+
     private InputAction move, jump, normalAttack;
 
     protected override void Updating()
@@ -50,6 +53,7 @@ public class PlayerControls : BasicControls
         normalAttack.started += StartNormalAttack;
         normalAttack.canceled += EndNormalAttack;
         jump.canceled += HandleJumpEndCommand;
+        health.OnHeal += Heal;
     }
 
     private void RemoveEvents()
@@ -57,6 +61,7 @@ public class PlayerControls : BasicControls
         normalAttack.started -= StartNormalAttack;
         normalAttack.canceled -= EndNormalAttack;
         jump.canceled -= HandleJumpEndCommand;
+        health.OnHeal -= Heal;
     }
 
     private void DisableInputActions()
@@ -93,5 +98,16 @@ public class PlayerControls : BasicControls
     public void PickUpCoin(int amount)
     {
         coinCounter?.AddCountable(amount);
+    }
+
+    private void Heal(int amount)
+    {
+        healthUI.Heal(amount);
+    }
+
+    protected override void ReceiveDamage(Vector3 direction, int amount)
+    {
+        base.ReceiveDamage(direction, amount);
+        healthUI.GetDamaged(amount);
     }
 }

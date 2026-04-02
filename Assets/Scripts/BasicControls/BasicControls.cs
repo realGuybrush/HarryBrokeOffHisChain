@@ -16,7 +16,7 @@ public class BasicControls : MonoBehaviour
     protected Transform visualPart;
     
     [SerializeField]
-    private Health health;
+    protected Health health;
 
     [SerializeField]
     protected Movement movement;
@@ -126,7 +126,7 @@ public class BasicControls : MonoBehaviour
         enabled = false;
     }
 
-    protected virtual void ReceiveDamage(Vector3 direction)
+    protected virtual void ReceiveDamage(Vector3 direction, int amount)
     {
         animator.SetBoolTemporarily("Damaged", true);
         thisBody.linearVelocity += new Vector2(direction.x, 1) * defaultKickForce;

@@ -16,7 +16,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private int health = 10;
 
-    public event Action<Vector3> OnDamaged = delegate { };
+    public event Action<int> OnHeal = delegate { };
+    public event Action<Vector3, int> OnDamaged = delegate { };
     public event Action OnDie = delegate { };
 
     public int GetDamage(int Damage, Vector3 direction) {
@@ -24,14 +25,19 @@ public class Health : MonoBehaviour
         if (totalDamageReceived > health)
             totalDamageReceived = health;
         health -= totalDamageReceived;
+        OnDamaged?.Invoke(-direction, Damage);
         if (health <= 0)
         {
             OnDie?.Invoke();
-        } else
-        {
-            OnDamaged?.Invoke(-direction);
         }
         return totalDamageReceived;
+    }
+    
+    public void Heal(int amount) {
+        health += amount;
+        if (health > maxHealth)
+            health = maxHealth;
+        OnHeal?.Invoke(amount);
     }
 
     public float MaxHP => maxHealth;

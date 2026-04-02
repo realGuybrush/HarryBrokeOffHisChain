@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart.kra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart.kra~" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart_Left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart_Right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIBreak.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIBreak.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIBrokenIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIBrokenIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIIdle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIIdle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIMend.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Heart/HeartUIMend.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart.kra.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart_Left.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Heart_Right.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Heart.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Heart.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HeartUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HeartUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Recovery.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Recovery/0.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Recovery/0.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_CoinBronze.kra~" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/BasicItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/BasicItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BasicControls/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/PlayerControls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AdjustTextPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/1d/c837751a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/4b/d38eea16/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/74/e940dabc/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UICounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7428">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="7428" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -110,6 +133,7 @@
       <workItem from="1773676597816" duration="1103000" />
       <workItem from="1775024808840" duration="2358000" />
       <workItem from="1775028759953" duration="2788000" />
+      <workItem from="1775118981783" duration="3703000" />
     </task>
     <task id="LOCAL-00001" summary="Added Left-RightWalker Sprite">
       <created>1772711905843</created>
@@ -132,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1773659463679</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added UI Heart">
+      <created>1775042493396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775042493396</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +178,7 @@
     <MESSAGE value="Added Left-RightWalker Sprite" />
     <MESSAGE value="Used Larry Sprite" />
     <MESSAGE value="Modified land and spikes textures, added land toppings, fixed enemy not flipping." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified land and spikes textures, added land toppings, fixed enemy not flipping." />
+    <MESSAGE value="Added UI Heart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added UI Heart" />
   </component>
 </project>
