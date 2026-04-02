@@ -32,6 +32,10 @@ public class Movement : MonoBehaviour
         {
             speedUpTimer = speedUpTime;
         }
+        else
+        {
+            accelerationCoeff = 1.0f;
+        }
         float walkSpeed = defaultSpeed * accelerationCoeff;
         thisObject.linearVelocity = new Vector2(walkSpeed * direction.x, thisObject.linearVelocity.y);
         slowDownTimer = slowDownTime;
