@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="" />
+    <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryWalk.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryWalk.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/Triangle.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/Triangle.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Harry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,12 +81,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/730a921692574a20946c05612426e0373f200/ac/f227e00c/Graph.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AdjustTextPosition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WorldAndWorldGeneration/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/1d/c837751a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/4b/d38eea16/NullReferenceException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/74/e940dabc/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/74/e940dabc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UICounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BasicControls/BasicControls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory&amp;Items/Items/Heart.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,7 +96,6 @@
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/FlashProjectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Constantia/Constantia/Assets/Scripts/Inventory&amp;Items/Projectile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1eb9db207454431c84a47bcd81e79c3746ae00/17/e56a109e/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18b3b31e3d8341f487466ebb6800bc67212400/7d/ecdca555/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MobController/MobBasicControls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerControls/PlayerControls.cs" root0="FORCE_HIGHLIGHTING" />
@@ -152,6 +166,7 @@
       <workItem from="1775028759953" duration="2788000" />
       <workItem from="1775118981783" duration="6402000" />
       <workItem from="1775135253180" duration="1960000" />
+      <workItem from="1776068513150" duration="2201000" />
     </task>
     <task id="LOCAL-00001" summary="Added Left-RightWalker Sprite">
       <created>1772711905843</created>
