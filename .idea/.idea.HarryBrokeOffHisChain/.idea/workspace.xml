@@ -2,21 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5c3957a-8ab0-4ee6-90c0-7f346e649031" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryWalk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryWalk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Step2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HarryBrokeOffHisChain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/Triangle.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/Triangle.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Harry.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Harry.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Heart/Heart.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Idle.anim.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Walk.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/LeftRightWalker/LRW_Walk.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/ProjectileSkull.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/ProjectileSkull/Projectile.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/ProjectileSkull/Projectile.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/ProjectileSkull/ProjectileSkull_Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/ProjectileSkull/ProjectileSkull_Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryAirborne.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Harry/HarryAirborne.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.kra~" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png~" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Jump.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Harry_Jump.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker_Step1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker_Step1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker_Step2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_LeftRightWalker_Step2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.kra" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.kra" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/HarryGame_Environment.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectile.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +172,7 @@
       <workItem from="1775028759953" duration="2788000" />
       <workItem from="1775118981783" duration="6402000" />
       <workItem from="1775135253180" duration="1960000" />
-      <workItem from="1776068513150" duration="2201000" />
+      <workItem from="1776068513150" duration="2833000" />
     </task>
     <task id="LOCAL-00001" summary="Added Left-RightWalker Sprite">
       <created>1772711905843</created>
@@ -217,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1775137587137</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Movement and Jumping animation for Harry and movement animation for Larry.">
+      <created>1776071811110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776071811110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +249,8 @@
     <MESSAGE value="Added connection between damage and UI." />
     <MESSAGE value="Fixed bug with movement after getting kicked." />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Added Movement and Jumping animation for Harry and movement animation for Larry." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Movement and Jumping animation for Harry and movement animation for Larry." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

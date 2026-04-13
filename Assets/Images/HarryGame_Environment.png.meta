@@ -283,7 +283,7 @@ TextureImporter:
         width: 300
         height: 300
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -292,6 +292,28 @@ TextureImporter:
       bones: []
       spriteID: 6cde65793fe645e4399bef0b062de06f
       internalID: 1746737698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HarryGame_Environment_8
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 303
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851b7f7250c933340bbb3d02f88c7f58
+      internalID: -942771366
       vertices: []
       indices: 
       edges: []
@@ -318,6 +340,7 @@ TextureImporter:
       HarryGame_Environment_5: 1998722668
       HarryGame_Environment_6: 1397006648
       HarryGame_Environment_7: 1746737698
+      HarryGame_Environment_8: -942771366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
